@@ -83,3 +83,22 @@ else
     Console.WriteLine("Число нечетное");
 }
 */
+
+// Задача 8. Напишите программу, которая на вход принимает число (N),
+// а на выходе показывает все чётные числа от 1 до N.
+
+Console.Write("Input a positive number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int current = 2;
+
+if (number < 2)
+{
+    Console.Write($"Согласно условиям задачи, четных чисел до числа {number} не обнаружено");
+}
+
+while (current <= number)
+{
+    Console.Write(current + " ");
+    current = current +2;
+}
