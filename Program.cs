@@ -43,3 +43,28 @@ else
     Console.WriteLine("Первое число равно второму. Max = " + firstNumber);
 }
 */
+
+// Задача 4. Напишите программу, которая принимает на вход три числа и 
+// выдаёт максимальное из этих чисел.
+/*
+Console.Write("Input a first number: ");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a second number: ");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a third number: ");
+int thirdNumber = Convert.ToInt32(Console.ReadLine());
+
+int max = firstNumber;
+
+if (secondNumber > firstNumber)
+{
+    max = secondNumber;
+}
+if (thirdNumber > secondNumber)
+{
+    max = thirdNumber;
+}
+
+Console.Write("Максимальное число: " + max);
+*/
+
