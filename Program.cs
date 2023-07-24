@@ -103,3 +103,39 @@ while (current <= number)
     current = current +2;
 }
 */
+
+// Задача про собаку
+/*
+Console.Write("Set up a distance between two friends (meters): ");
+int distance = Convert.ToInt32(Console.ReadLine());
+Console.Write("Set up a speed of the first friend: ");
+int firstFriendSpeed = Convert.ToInt32(Console.ReadLine());
+Console.Write("Set up a speed of the second friend: ");
+int secondFriendSpeed = Convert.ToInt32(Console.ReadLine());
+Console.Write("Set up a dog speed: ");
+int dogSpeed = Convert.ToInt32(Console.ReadLine());
+Console.Write("Set up a dog position: First Friend = 1 or Second Friend = 2: ");
+int dogPosition = Convert.ToInt32(Console.ReadLine());
+
+int count = 0;
+int meetingPoint = 10;
+
+while (meetingPoint < distance)
+{
+    if (dogPosition == 1)
+    {
+        distance = distance - distance*(firstFriendSpeed + secondFriendSpeed)/(secondFriendSpeed + dogSpeed);
+        count++;
+        dogPosition = 2;
+    }
+    else 
+    {
+       distance = distance - distance*(firstFriendSpeed + secondFriendSpeed)/(firstFriendSpeed + dogSpeed); 
+       count++;
+       dogPosition = 1;
+    }
+}
+Console.WriteLine("Собака пробежала " + count + " раз");
+*/
+
+
